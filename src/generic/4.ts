@@ -5,7 +5,7 @@ interface PropsTitle {
   title: string;
 }
 
-class Component<T> {
+class Component<T extends PropsTitle> {
   constructor (public props:T) {
   }
 }
